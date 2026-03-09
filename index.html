@@ -1,1082 +1,723 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Bigcarz-Home</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BigCarz-Aradhana Tours and Travels</title>
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
+<!-- Premium Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+<!-- Custom CSS -->
+<link href="css/style.css?v=5" rel="stylesheet">
+</head>
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+<body>
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
-    <!-- Spinner End -->
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top premium-nav shadow-sm">
 
-    <!-- Topbar Start -->
-    <div>
-      <!-- Navbar Start -->
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0"
-      >
-        <a href="index.html" class="navbar-brand p-0">
-          <img
-            src="img/bigcarzo_logo_transparent.png"
-            alt="Logo"
-            style="height: 60px"
-          />
+  <div class="container">
+<a class="navbar-brand d-flex align-items-start" href="#">
+
+  <img src="img/bigcarzo_logo_transparent.png"
+       alt="BigCarz Logo"
+       class="navbar-logo me-3">
+
+  <div class="brand-block">
+    <span class="brand-title">
+      BigCarz – Aradhana Tours and Travels
+    </span>
+     <div class="contact-line">
+        <a href="tel:+919964104000" class="lux-call">
+          <i class="fa fa-phone"></i>
+          <span>+91 9964104000</span>
         </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="fa fa-bars"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="service.html" class="nav-item nav-link">Services</a>
-            <a href="destination.html" class="nav-item nav-link"
-              >Destinations</a
-            >
-            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-          </div>
-        </div>
-      </nav>
-      <!-- Navbar End -->
-    </div>
-    <!-- Topbar End -->
-
-    <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
-      <div class="container py-5">
-        <div class="row justify-content-center py-5">
-          <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">
-              Travel, enjoy and live a new and full life
-            </h1>
-            <p class="fs-6 text-white mb-4 animated slideInDown">
-              From highways to holy places — travel India with us, where every
-              journey is built on trust, comfort, and care. Your journey, our
-              wheels, endless memories — because we believe travel should feel
-              safe, smooth, and stress-free. With professional drivers,
-              well-maintained vehicles, and carefully planned routes, we make
-              road trips made better together, giving you not just a
-              destination, but a peaceful and memorable travel experience across
-              India.
-            </p>
-          </div>
-        </div>
-         <!-- Contact Info Cards -->
-          <div class="row g-4 justify-content-center mt-3 animated slideInUp">
-            <!-- Office -->
-            <div class="col-md-4">
-              <div class="rounded p-4 h-100 shadow-sm ">
-                <h3 class="text-yellow mb-3">
-                  <i class="fa fa-map-marker-alt me-2"></i>Office
-                </h3>
-
-                <p class="mb-3 text-white fw-bold medium">
-                  Below Good Homes Furniture, Near More,<br />
-                  Next to Bakkeshwara Kalyana Mantapa,<br />
-                  Nijalingappa Layout, Davangere – 577004,<br />
-                  Karnataka
-                </p>
-
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=Below+Good+Homes+Furniture+Nijalingappa+Layout+Davangere+577004"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                >
-                  <i class="fa fa-map me-2"></i>
-                  Open in Maps
-                </a>
-              </div>
-            </div>
-
-            <!-- Phone -->
-            <div class="col-md-4">
-              <div class="rounded p-4 h-100 shadow-sm">
-                <h3 class="text-yellow mb-3">
-                  <i class="fa fa-phone-alt me-2"></i>
-                  <i class="fab fa-whatsapp text-success me-2"></i>
-                  Call Us/DM us
-                </h3>
-
-                <p class="fw-bold mb-2">
-                  <a
-                    href="tel:+919964104000"
-                    class="text-white text-decoration-none"
-                  >
-                    +91 9964104000
-                  </a>
-                </p>
-
-                <a
-                  href="https://wa.me/919964104000"
-                  target="_blank"
-                  class="btn btn-success btn-sm mt-2"
-                >
-                  <i class="fab fa-whatsapp me-2"></i>
-                  Chat on WhatsApp
-                </a>
-              </div>
-            </div>
-
-            <!-- Email -->
-            <div class="col-md-4">
-              <div class="rounded p-4 h-100 shadow-sm">
-                <h3 class="text-yellow mb-3">
-                  <i class="fa fa-envelope me-2"></i>Email
-                </h3>
-
-                <p class="fw-bold mb-2">
-                  <a
-                    href="mailto:Pbuaradhana@gmail.com"
-                    class="text-white text-decoration-none"
-                  >
-                    Pbuaradhana@gmail.com
-                  </a>
-                </p>
-
-                <a
-                  href="mailto:Pbuaradhana@gmail.com?subject=Travel%20Enquiry%20from%20Website&body=Hello%20Bigcarz,%0A%0AI%20would%20like%20to%20enquire%20about..."
-                  class="btn btn-primary btn-sm mt-2"
-                >
-                  <i class="fa fa-envelope me-2"></i>
-                  Send Email
-                </a>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-    <!-- Hero End -->
-
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="d-flex flex-column h-100 gap-3">
-              <img
-                class="img-fluid rounded"
-                src="img/cover_family_dog.png"
-                alt=""
-                style="object-fit: cover"
-              />
-              <img
-                class="img-fluid rounded"
-                src="img/cover_TT_final.png"
-                alt=""
-              />
-              <img class="img-fluid rounded" src="img/car_final.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp fs-5" data-wow-delay="0.3s">
-            <h6 class="section-title bg-white text-start text-primary pe-3">
-              About Us
-            </h6>
-            <h1 class="mb-4">
-              Welcome to <span class="text-primary">Bigcarz</span>
-            </h1>
-            <h5 class="mb-3">🧭 Who We Are</h5>
-            <p class="text-dark lh-lg">
-              We are a passionate travel company dedicated to creating safe,
-              comfortable, and memorable road journeys across India. From scenic
-              highways to sacred destinations, we specialize in customized tour
-              packages designed for families, friends, corporate groups, and
-              solo travelers.
-            </p>
-            <h5 class="mb-4">🚐 What We Do</h5>
-            <p class="text-dark lh-lg">
-              We offer well-planned travel packages using cars, buses, and tempo
-              travellers, covering popular tourist destinations, pilgrimage
-              routes, weekend getaways, and long-distance road trips. Every
-              journey is carefully designed to match your comfort, schedule, and
-              travel preferences.
-            </p>
-            <h5 class="mb-4">🛡️ Safety & Comfort First (Very Important)</h5>
-            <p class="text-dark lh-lg">
-              Your safety is our top priority. All our vehicles are regularly
-              serviced, well-maintained, and driven by experienced, licensed
-              drivers who understand Indian roads inside and out. We follow
-              strict safety standards to ensure a smooth and worry-free travel
-              experience.
-            </p>
-            <h5 class="mb-4">💛 Why Travel With Us</h5>
-            <ul class="mb-4">
-              <li class="text-dark lh-lg">Experienced and courteous drivers</li>
-              <li class="text-dark lh-lg">
-                Clean, comfortable, and reliable vehicles
-              </li>
-              <li class="text-dark lh-lg">
-                Transparent pricing with no hidden charges
-              </li>
-              <li class="text-dark lh-lg">
-                Flexible and customizable tour packages
-              </li>
-              <li class="text-dark lh-lg">
-                On-time pickup and dependable service
-              </li>
-              <li class="text-dark lh-lg">
-                Friendly customer support throughout your journey
-              </li>
-            </ul>
-            <h5 class="mb-4">🌟 Our Promise</h5>
-            <p class="text-dark lh-lg">
-              We believe that every journey should be as enjoyable as the
-              destination. With a strong focus on comfort, reliability, and
-              customer satisfaction, we strive to turn every trip into a
-              collection of beautiful memories you’ll cherish forever.
-            </p>
-            <div class="row gy-2 gx-4 mb-4">
-              <div class="col-sm-6">
-                <p class="mb-0 text-dark lh-lg">
-                  <i class="fa fa-arrow-right text-primary me-2"></i> Latest
-                  Model AC Cars, Buses & Tempo Travellers
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0 text-dark lh-lg">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>Experienced
-                  & Verified Professional Drivers
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0 text-dark lh-lg">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>Customized
-                  Road Trip Packages Across India
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0 text-dark lh-lg">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>Safe,
-                  Sanitized & Well-Maintained Vehicles
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0 text-dark lh-lg">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>150 Premium
-                  City Tours
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0 text-dark lh-lg">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>Transparent
-                  Pricing – No Hidden Charges
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0 text-dark lh-lg">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>24/7 Travel
-                  Support & On-Road Assistance
-                </p>
-              </div>
-            </div>
-            <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- About End -->
-
-    <!-- Service Start -->
-    <div class="container-fluid py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title bg-white text-center text-primary px-3">
-            Services
-          </h6>
-          <h1 class="mb-5">Our Services</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item rounded pt-3">
-              <div class="p-4">
-                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                <h5>Pan-India Road Tours/All-India Road Trip Packages</h5>
-                <p>
-                  Explore Incredible India by road with our Pan-India tour
-                  packages. From scenic highways to cultural landmarks, we offer
-                  safe, comfortable, and fully customized road trips across the
-                  country—designed for families, groups, and travelers who value
-                  reliability and premium service.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item rounded pt-3">
-              <div class="p-4">
-                <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
-                <h5>Hotel Reservations (On Request)</h5>
-                <p>
-                  We offer hotel reservations as an optional service to
-                  complement your road journey. Based on your destination,
-                  travel style, and budget, we arrange clean, comfortable, and
-                  carefully selected hotels to ensure a relaxing stay after
-                  every day of travel. Whether you prefer budget-friendly
-                  comfort or premium accommodations, we partner with trusted
-                  hotels across India to provide safe and pleasant stays—only
-                  when you choose to include them.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item rounded pt-3">
-              <div class="p-4">
-                <i class="fa fa-3x fa-user text-primary mb-4"></i>
-                <h5>Travel suggestion</h5>
-                <p>
-                  Not sure where to go or how to plan your route? Our travel
-                  suggestions are thoughtfully curated to help you discover the
-                  best destinations across India based on season, road
-                  conditions, travel duration, and group preferences. From
-                  scenic road trips and cultural circuits to spiritual journeys
-                  and weekend escapes, we guide you toward destinations that
-                  offer comfort, safety, and memorable experiences. Whether
-                  you’re planning a short getaway or an extended road tour, we
-                  ensure you travel smarter, avoid common hassles, and make the
-                  most of every mile on the road.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="service-item rounded pt-3">
-              <div class="p-4">
-                <i class="fa fa-3x fa-cog text-primary mb-4"></i>
-                <h5>Trip Planning</h5>
-                <p>
-                  Every journey is unique, and so is the way we plan it. Our
-                  trip planning service is focused on creating personalized road
-                  travel experiences across India, tailored to your
-                  destinations, travel duration, group size, and comfort
-                  preferences. From route planning and vehicle selection to
-                  travel timing and rest stops, we take care of every detail to
-                  ensure a smooth and stress-free journey. Whether you’re
-                  planning a family vacation, pilgrimage, corporate trip, or
-                  long-distance road tour, our experienced team works closely
-                  with you to design an itinerary that balances comfort, safety,
-                  and memorable experiences—so you can travel with complete
-                  confidence.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Destination Start -->
-    <div class="container-fluid py-5 destination">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title bg-white text-center text-primary px-3">
-            Destination
-          </h6>
-          <h1 class="mb-5">Popular Destination</h1>
-        </div>
-        <div class="row g-4">
-          <!-- LEFT COLUMN -->
-          <div class="col-lg-6">
-            <div class="row g-4">
-              <!-- North India -->
-              <div class="col-12 wow zoomIn">
-                <a class="d-block position-relative">
-                  <img
-                    src="img/Northindia.jpg"
-                    class="img-fluid destination-img w-100"
-                  />
-                  <!-- <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-2 px-2 py-1">10% OFF</div> -->
-                  <div
-                    class="text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1"
-                  >
-                    North India Trip
-                  </div>
-                </a>
-              </div>
-
-              <!-- Kanyakumari -->
-              <div class="col-md-6 wow zoomIn">
-                <a class="d-block position-relative">
-                  <img
-                    src="img/Dhanuskodi_final.png"
-                    class="img-fluid destination-img w-100"
-                  />
-                  <div
-                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1"
-                  >
-                    Kanyakumari
-                  </div>
-                </a>
-              </div>
-
-              <!-- Taj Mahal
-      <div class="col-md-6 wow zoomIn">
-        <a class="d-block position-relative">
-          <img src="img/Tajmahal (2).jpg" class="img-fluid destination-img w-100" />
-          <div class="text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1">Taj Mahal</div>
+        <a href="https://wa.me/919964104000"
+           target="_blank"
+           class="lux-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>+91 9964104000</span>
         </a>
-      </div> -->
+        <a href="tel:+919844292481" class="lux-call">
+          <i class="fa fa-phone"></i>
+          <span>+91 9844292481</span>
+        </a>
+        <a href="https://wa.me/919844292481"
+           target="_blank"
+           class="lux-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>+91 9844292481</span>
+        </a>
+      </div>
 
-              <!-- Varkala -->
-              <div class="col-md-6 wow zoomIn">
-                <a class="d-block position-relative">
-                  <img
-                    src="img/Kerala_final.png"
-                    class="img-fluid destination-img w-100"
-                  />
-                  <div
-                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1"
-                  >
-                    Varkala - Allepey Boat House
-                  </div>
-                </a>
-              </div>
+    <!-- <div class="brand-contact">
+  
+      <div class="contact-line">
+        <a href="tel:+919964104000" class="lux-call">
+          <i class="fa fa-phone"></i>
+          <span>+91 9964104000</span>
+        </a>
+        <a href="https://wa.me/919964104000"
+           target="_blank"
+           class="lux-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>+91 9964104000</span>
+        </a>
+      </div>
 
-              <!-- Coorg -->
-              <div class="col-md-6 wow zoomIn">
-                <a class="d-block position-relative">
-                  <img
-                    src="img/coorg_final.png"
-                    class="img-fluid destination-img w-100"
-                  />
-                  <div
-                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1"
-                  >
-                    Coorg
-                  </div>
-                </a>
-              </div>
-              <!-- Ujjain -->
-              <div class="col-md-6 wow zoomIn">
-                <a class="d-block position-relative">
-                  <img
-                    src="img/Ujjain_final.png"
-                    class="img-fluid destination-img w-100"
-                  />
-                  <div
-                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1"
-                  >
-                    Ujjain
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+    
+       <div class="contact-line">
+        <a href="tel:+919844292481" class="lux-call">
+          <i class="fa fa-phone"></i>
+          <span>+91 9844292481</span>
+        </a>
+        <a href="https://wa.me/919844292481"
+           target="_blank"
+           class="lux-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>+91 9844292481</span>
+        </a>
+      </div>
+    </div> -->
+  </div>
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-          <!-- RIGHT COLUMN -->
-          <div class="col-lg-6">
-            <div class="row g-4">
-              <!-- South India -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-              <!-- Image 1 -->
-              <div class="col-md-6 wow zoomIn">
-                <a class="d-block position-relative">
-                  <img
-                    src="img/south_india_package_trip.png"
-                    class="img-fluid destination-img w-100"
-                  />
-                  <div
-                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1"
-                  >
-                    South India Trip
-                  </div>
-                </a>
-              </div>
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <img src="img/cover_tt_image.png" class="hero-img" alt="BigCarz Travel">
+  <div class="hero-content text-center">
+    <h6 class="hero-title">Luxury Travel. Premium Comfort.</h6>
+    <p class="hero-subtitle">
+      Experience journeys crafted with elegance and excellence.
+    </p>
+    <a href="#contact" class="btn premium-btn mt-3">
+      Book Your Journey
+    </a>
+  </div>
+</section>
 
-              <!-- Image 2 -->
-              <div class="col-md-6 wow zoomIn">
-                <a class="d-block position-relative">
-                  <img
-                    src="img/Sakleshpur_final.png"
-                    class="img-fluid destination-img w-100"
-                  />
-                  <div
-                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1"
-                  >
-                    Sakleshpur
-                  </div>
-                </a>
-              </div>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section-padding">
+  <div class="container">
+  <div class="row mb-5">
+      <div class="col-lg-10 mx-auto text-center">
+<h3 class="hero-title text-gold mb-3">About Us</h3>
+  <h6 class="hero-main-title">
+    Welcome to Bigcarz — Where Every Journey Becomes an Experience.
+  </h6>
 
-              <!-- Isha -->
-              <div class="col-md-6 wow zoomIn">
-                <a class="d-block position-relative">
-                  <img
-                    src="img/Isha_final.png"
-                    class="img-fluid destination-img w-100"
-                  />
-                  <div
-                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1"
-                  >
-                    Isha Foundation-Sadguru
-                  </div>
-                </a>
-              </div>
+  <p class="hero-description">
+    At Bigcarz, we redefine road travel across India with sophistication,
+    comfort, and uncompromising reliability. From majestic highways and
+    serene landscapes to sacred pilgrimage destinations, we curate bespoke
+    travel experiences designed for families, corporate groups, and discerning
+    explorers. Our fleet of latest model AC cars, premium tempo travellers,
+    and luxury buses ensures every mile is traveled in style and comfort.
+    Driven by experienced, professionally trained chauffeurs and supported
+    by meticulous vehicle maintenance standards, we place safety, elegance,
+    and punctuality at the heart of every journey. With transparent pricing,
+    personalized itineraries, and dedicated 24/7 assistance, we deliver
+    seamless travel experiences tailored to your expectations. At Bigcarz,
+    we don’t just take you to a destination — we craft refined road journeys
+    that leave lasting impressions.
+  </p>
 
-              <!-- Shirdi -->
-              <div class="col-md-6 wow zoomIn">
-                <a class="d-block position-relative">
-                  <img
-                    src="img/Shirdi-final.png"
-                    class="img-fluid destination-img w-100"
-                  />
-                  <div
-                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1"
-                  >
-                    Shirdi
-                  </div>
-                </a>
-              </div>
-              <!-- Kodaikanal -->
-              <div class="col-md-6 wow zoomIn">
-                <a class="d-block position-relative">
-                  <img
-                    src="img/Kodaikanal_final.png"
-                    class="img-fluid destination-img w-100"
-                  />
-                  <div
-                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1"
-                  >
-                    Kodaikanal
-                  </div>
-                </a>
-              </div>
-              <!-- Mysore -->
-              <div class="col-md-6 wow zoomIn">
-                <a class="d-block position-relative">
-                  <img
-                    src="img/Mysore_final.png"
-                    class="img-fluid destination-img w-100"
-                  />
-                  <div
-                    class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-2 px-2 py-1"
-                  >
-                    Mysore
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+</div>
+  </div>
+
+  <div class="row align-items-stretch g-5">
+      <!-- LEFT IMAGES -->
+      <div class="col-lg-6">
+        <div class="about-images">
+          <img src="img/car_final.png" class="img-fluid rounded shadow-sm about-img" alt="">
+          <img src="img/Comforatable_journey.png" class="img-fluid rounded shadow-sm mb-4 about-img" alt=""> 
+          <img src="img/bus_final.png" class="img-fluid rounded shadow-sm mb-4 about-img" alt="">
+<!-- <div class="col-lg-6">
+
+
+   
+    <div class="about-video">
+      <iframe
+        src="https://www.youtube.com/embed/LKkuVwrjv-M?autoplay=1&mute=1&loop=1&playlist=LKkuVwrjv-M&controls=0&modestbranding=1"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+
+</div> -->
+
         </div>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="col-lg-6  d-flex flex-column justify-content-center">
+
+        
+        <h2 class="section-title mb-4">
+          Welcome to <span class="text-gold">Bigcarz</span>
+        </h2>
+
+        <h5 class="premium-heading">🧭 Who We Are</h5>
+        <p class="premium-text">
+          We are a passionate travel company dedicated to creating safe,
+          comfortable, and memorable road journeys across India. From scenic
+          highways to sacred destinations, we specialize in customized tour
+          packages designed for families, friends, corporate groups, and
+          solo travelers.
+        </p>
+
+        <h5 class="premium-heading">🚐 What We Do</h5>
+        <p class="premium-text">
+          We offer well-planned travel packages using cars, buses, and tempo
+          travellers, covering popular tourist destinations, pilgrimage
+          routes, weekend getaways, and long-distance road trips. Every
+          journey is carefully designed to match your comfort, schedule, and
+          travel preferences.
+        </p>
+
+        <h5 class="premium-heading">🛡️ Safety & Comfort First</h5>
+        <p class="premium-text">
+          Your safety is our top priority. All our vehicles are regularly
+          serviced, well-maintained, and driven by experienced, licensed
+          drivers who understand Indian roads inside and out. We follow
+          strict safety standards to ensure a smooth and worry-free travel
+          experience.
+        </p>
+
+        <h5 class="premium-heading">💛 Why Travel With Us</h5>
+        <ul class="premium-list">
+          <li>Experienced and courteous drivers</li>
+          <li>Clean, comfortable, and reliable vehicles</li>
+          <li>Transparent pricing with no hidden charges</li>
+          <li>Flexible and customizable tour packages</li>
+          <li>On-time pickup and dependable service</li>
+          <li>Friendly customer support throughout your journey</li>
+        </ul>
+
+        <h5 class="premium-heading">🌟 Our Promise</h5>
+        <p class="premium-text">
+          We believe that every journey should be as enjoyable as the
+          destination. With a strong focus on comfort, reliability, and
+          customer satisfaction, we strive to turn every trip into a
+          collection of beautiful memories you’ll cherish forever.
+        </p>
+
+        <div class="row gy-2 mt-4">
+          <div class="col-sm-6 premium-feature">✔ Latest Model AC Cars, Buses & Tempo Travellers</div>
+          <div class="col-sm-6 premium-feature">✔ Experienced & Verified Professional Drivers</div>
+          <div class="col-sm-6 premium-feature">✔ Customized Road Trip Packages Across India</div>
+          <div class="col-sm-6 premium-feature">✔ Safe, Sanitized & Well-Maintained Vehicles</div>
+          <div class="col-sm-6 premium-feature">✔ 150 Premium City Tours</div>
+          <div class="col-sm-6 premium-feature">✔ Transparent Pricing – No Hidden Charges</div>
+          <div class="col-sm-6 premium-feature">✔ 24/7 Travel Support & On-Road Assistance</div>
+        </div>
+
       </div>
     </div>
-    <!-- Destination end -->
+  </div>
+  </div>
+</section>
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title bg-white text-center text-primary px-3">
-            Contact Us
-          </h6>
-          <h1 class="mb-5">Contact For Any Query</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <h5>Get In Touch</h5>
-            <h6 class="mb-4"></h6>
-            <div class="d-flex align-items-center mb-4">
-              <div
-                class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
-                style="width: 50px; height: 50px"
-              >
-                <i class="fa fa-map-marker-alt text-white"></i>
-              </div>
-              <div class="ms-3">
-                <h5 class="text-primary">Office</h5>
-                <p class="mb-0 text-dark lh-lg">
-                  Below Good Homes Furniture,Near More,Next to Bakkeshwara
-                  kalyana Mantapa,Nijalingappa Layout Davangere 577004,Karnataka
-                </p>
-              </div>
-            </div>
-            <div class="d-flex align-items-center mb-4">
-              <div
-                class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
-                style="width: 50px; height: 50px"
-              >
-                <i class="fa fa-phone-alt text-white"></i>
-              </div>
-              <div class="ms-3">
-                <h5 class="text-primary">Mobile</h5>
-                <p class="mb-0 text-dark lh-lg">+91 9964104000</p>
-              </div>
-            </div>
-            <div class="d-flex align-items-center">
-              <div
-                class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
-                style="width: 50px; height: 50px"
-              >
-                <i class="fa fa-envelope-open text-white"></i>
-              </div>
-              <div class="ms-3">
-                <h5 class="text-primary">Email</h5>
-                <p class="mb-0 text-dark lh-lg">Pbuaradhana@gmail.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <iframe
-              class="position-relative rounded w-100 h-100"
-              src="https://www.google.com/maps?q=Below%20Good%20Homes,%20Next%20to%20Bakkeshwara%20Kalyana%20Mantapa,%20Nijalingappa%20Layout,%20Davangere%20577004,%20Karnataka&output=embed"
-              frameborder="0"
-              style="min-height: 300px; border: 0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
-          </div>
-          <!-- <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div> -->
-          <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-            <form id="whatsappForm">
-              <div class="row g-3">
-                <!-- Name -->
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your Name"
-                      required
-                    />
-                    <label for="name">Your Name</label>
-                  </div>
-                </div>
+<!-- ================= SERVICES ================= -->
+<section id="services" class="section-padding bg-light">
 
-                <!-- Phone -->
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="phone"
-                      placeholder="Phone Number"
-                      pattern="[0-9]{10}"
-                      required
-                    />
-                    <label for="phone">Phone Number</label>
-                  </div>
-                </div>
+  <div class="container">
 
-                <!-- Email -->
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Your Email"
-                      required
-                    />
-                    <label for="email">Your Email</label>
-                  </div>
-                </div>
-
-                <!-- Enquiry From -->
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="fromPlace"
-                      placeholder="Enquiring From"
-                      required
-                    />
-                    <label for="fromPlace">Enquiring From (City / Place)</label>
-                  </div>
-                </div>
-
-                <!-- Travel Date -->
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="travelDate"
-                      required
-                    />
-                    <label for="travelDate">Travel Date</label>
-                  </div>
-                </div>
-
-                <!-- Message -->
-                <div class="col-12">
-                  <div class="form-floating">
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      placeholder="Message"
-                      style="height: 120px"
-                      required
-                    ></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                </div>
-
-                <!-- Submit -->
-                <div class="col-12">
-                  <button class="btn btn-primary w-100 py-3" type="submit">
-                    Send Enquiry via WhatsApp
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+      <h3 class="premium-subtitle">Services</h3>
+      <h2 class="section-title">Our Premium Services</h2>
+      <p class="service-intro mx-auto">
+        At Bigcarz, we offer comprehensive road travel solutions across India —
+        from expertly curated Pan-India road tours and customized trip planning
+        to thoughtful travel suggestions and optional hotel reservations tailored
+        to your comfort and budget. Every journey is designed with precision,
+        safety, and seamless coordination.
+      </p>
     </div>
-    <!-- Contact End -->
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-3">Company</h4>
-            <a class="btn btn-link" href="about.html">About Us</a>
-            <a class="btn btn-link" href="contact.html">Contact Us</a>
-            <a class="btn btn-link" href="destination.html">Our Destinations</a>
-            <a class="btn btn-link" href="service.html">Our Services</a>
-            <!-- <a class="btn btn-link" href="">Privacy Policy</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">FAQs & Help</a> -->
+    <!-- Service Cards -->
+    <div class="row g-4">
+
+      <!-- Service 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="service-card-premium h-100">
+          <div class="service-icon">
+            <i class="fa fa-globe"></i>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-3">Contact</h4>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>Below Good Homes
-              Furniture,Near More,Next to Bakkeshwara kalyana
-              Mantapa,Nijalingappa Layout Davangere 577004,Karnataka
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt bi bi-whatsapp me-3"></i>+91 9964104000
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>Pbuaradhana@gmail.com
-            </p>
-            <div class="d-flex pt-2">
-              <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a> -->
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-3">Gallery</h4>
-            <div class="row g-2 pt-2">
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  src="img/ayodhya_temple.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  src="img/kanyakumari (2).jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  src="img/Tajmahal.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img class="img-fluid bg-light p-1" src="img/isha.jpg" alt="" />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  src="img/kanyakumari.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  src="img/ayodhya.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  src="img/shirdi.webp"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  src="img/allepey_boat_house_1.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  src="img/kanyakumari (2).jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-3">Thanking You</h4>
-            <p>
-              Thank you for traveling through our website. We look forward to
-              taking you on the road across Incredible India.
-            </p>
-            <!-- <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div> -->
-          </div>
+          <h5>Pan-India Road Tours / All-India Road Trip Packages</h5>
+          <p>
+            Explore Incredible India by road with our Pan-India tour packages.
+            From scenic highways to cultural landmarks, we offer safe,
+            comfortable, and fully customized road trips across the country—
+            designed for families, groups, and travelers who value reliability
+            and premium service.
+          </p>
         </div>
       </div>
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">BigCarz</a>, All Right
-              Reserved.
 
-              <!--/*** The author’s attribution link below must remain intact on your website. ***/-->
-              <!--/*** If you wish to remove this credit link, please purchase the Pro Version from https://htmlcodex.com . ***/-->
-            </div>
-            <!-- <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
-                        </div>
-                    </div> -->
+      <!-- Service 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="service-card-premium h-100">
+          <div class="service-icon">
+            <i class="fa fa-hotel"></i>
           </div>
+          <h5>Hotel Reservations (On Request)</h5>
+          <p>
+            We offer hotel reservations as an optional service to complement your road journey.
+            Based on your destination, travel style, and budget, we arrange clean,
+            comfortable, and carefully selected hotels to ensure a relaxing stay.
+            Whether budget-friendly or premium, we partner with trusted hotels
+            across India to provide safe and pleasant stays—only when you choose.
+          </p>
         </div>
       </div>
+
+      <!-- Service 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="service-card-premium h-100">
+          <div class="service-icon">
+            <i class="fa fa-user"></i>
+          </div>
+          <h5>Travel Suggestions</h5>
+          <p>
+            Not sure where to go? Our travel suggestions help you discover the
+            best destinations based on season, road conditions, travel duration,
+            and group preferences. From scenic road trips to spiritual journeys,
+            we guide you toward safe, memorable, and well-planned experiences.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="service-card-premium h-100">
+          <div class="service-icon">
+            <i class="fa fa-cog"></i>
+          </div>
+          <h5>Trip Planning</h5>
+          <p>
+            Our trip planning service creates personalized road travel experiences
+            tailored to your destinations, travel duration, group size, and comfort
+            preferences. From route planning and vehicle selection to travel timing,
+            we ensure every detail is handled—so you travel stress-free and confidently.
+          </p>
+        </div>
+      </div>
+
     </div>
-    <!-- Footer End -->
+  </div>
+</section>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
+<!-- ================= DESTINATIONS ================= -->
+<section id="destinations" class="section-padding">
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        /* ===============================
-       WHATSAPP FORM HANDLER (SAFE)
-       =============================== */
+  <!-- Premium Header Banner -->
+  <div class="destination-hero text-center">
+    <div class="container">
+      <h3 class="premium-subtitle">Destinations</h3>
+      <h2 class="destination-title">
+        Discover Extraordinary Destinations
+      </h2>
 
-        const form = document.getElementById("whatsappForm");
+      <ol class="destination-list">
+        <li>🚐 Mysore – Heritage City</li>
+        <li>🏞 Sakleshpur – Switzerland of Karnataka</li>
+        <li>🧘 Coimbatore – Isha Foundation Retreat</li>
+        <li>🌄 Coorg – Scotland of India</li>
+        <li>🌴 Varkala – Wayanad – Kerala</li>
+        <li>🌊 Dhanushkodi – Last Land of India</li>
+        <li>🛕 Ujjain – Mahakaleshwar → Omkareshwar</li>
+        <li>🙏 Shirdi – Sai Baba → Shani Shingnapur</li>
+        <li>🗺 North India Trip</li>
+        <li>🌏 South India Trip</li>
+      </ol>
+    </div>
+  </div>
 
-        if (form) {
-          form.addEventListener("submit", function (e) {
-            e.preventDefault();
+  <!-- Image Grid -->
+  <div class="container mt-5">
+    <div class="row g-4">
 
-            const name = document.getElementById("name").value.trim();
-            const phone = document.getElementById("phone").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const fromPlace = document.getElementById("fromPlace").value.trim();
-            const travelDate = document.getElementById("travelDate").value;
-            const message = document.getElementById("message").value.trim();
+      <!-- Destination Card Template -->
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card">
+          <img src="img/Mysore_final.png" class="img-fluid" alt="Mysore">
+          <div class="destination-overlay">Mysore</div>
+        </div>
+      </div>
 
-            /* ---------- VALIDATION ---------- */
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card">
+          <img src="img/Isha_final.png" class="img-fluid" alt="Isha Foundation">
+          <div class="destination-overlay">Isha Foundation</div>
+        </div>
+      </div>
 
-            if (name.length < 3) {
-              alert("Please enter a valid name (minimum 3 characters).");
-              return;
-            }
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card">
+          <img src="img/Ujjain_final.png" class="img-fluid" alt="Ujjain">
+          <div class="destination-overlay">Ujjain</div>
+        </div>
+      </div>
 
-            if (!/^[0-9]{10}$/.test(phone)) {
-              alert("Please enter a valid 10-digit phone number.");
-              return;
-            }
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card">
+          <img src="img/Kerala_final.png" class="img-fluid" alt="Kerala">
+          <div class="destination-overlay">Kerala</div>
+        </div>
+      </div>
 
-            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-              alert("Please enter a valid email address.");
-              return;
-            }
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card">
+          <img src="img/Dhanuskodi_final.png" class="img-fluid" alt="Dhanuskodi">
+          <div class="destination-overlay">Dhanuskodi</div>
+        </div>
+      </div>
 
-            if (fromPlace.length < 2) {
-              alert("Please enter the place you are enquiring from.");
-              return;
-            }
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card">
+          <img src="img/Shirdi-final.png" class="img-fluid" alt="Shirdi">
+          <div class="destination-overlay">Shirdi</div>
+        </div>
+      </div>
 
-            if (!travelDate) {
-              alert("Please select your travel date.");
-              return;
-            }
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card">
+          <img src="img/Tajmahal.jpg" class="img-fluid" alt="Taj Mahal">
+          <div class="destination-overlay">Taj Mahal</div>
+        </div>
+      </div>
 
-            const today = new Date().toISOString().split("T")[0];
-            if (travelDate < today) {
-              alert("Travel date cannot be in the past.");
-              return;
-            }
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card">
+          <img src="img/Northindia.jpg" class="img-fluid" alt="North India">
+          <div class="destination-overlay">North India Trip</div>
+        </div>
+      </div>
 
-            if (message.length < 10) {
-              alert("Please enter a message with at least 10 characters.");
-              return;
-            }
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card">
+          <img src="img/Southindia.jpg" class="img-fluid" alt="South India">
+          <div class="destination-overlay">South India Trip</div>
+        </div>
+      </div>
 
-            /* ---------- WHATSAPP ---------- */
+      <div class="col-lg-6 col-md-6">
+        <div class="destination-card">
+          <img src="img/Sakleshpur_final.png" class="img-fluid" alt="Sakleshpur">
+          <div class="destination-overlay">Sakleshpur</div>
+        </div>
+      </div>
 
-            const whatsappNumber = "919964104000";
+      <div class="col-lg-6 col-md-6">
+        <div class="destination-card">
+          <img src="img/coorg_final.png" class="img-fluid" alt="Coorg">
+          <div class="destination-overlay">Coorg</div>
+        </div>
+      </div>
 
-            const text =
-              "New Travel Enquiry\n\n" +
-              "Name: " +
-              name +
-              "\n" +
-              "Phone: " +
-              phone +
-              "\n" +
-              "Email: " +
-              email +
-              "\n" +
-              "From: " +
-              fromPlace +
-              "\n" +
-              "Travel Date: " +
-              travelDate +
-              "\n\n" +
-              "Message:\n" +
-              message;
+    </div>
+  </div>
 
-            const url =
-              "https://wa.me/" +
-              whatsappNumber +
-              "?text=" +
-              encodeURIComponent(text);
+</section>
 
-            window.open(url, "_blank");
-          });
-        }
 
-        /* ===============================
-       NAVBAR ACTIVE LINK
-       =============================== */
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section-padding bg-light">
 
-        const currentPath = window.location.pathname.toLowerCase();
+  <div class="container">
 
-        document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
-          const linkHref = link.getAttribute("href").toLowerCase();
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+      <h3 class="premium-subtitle">Contact Us</h3>
+      <h2 class="section-title">Contact For Any Query</h2>
+    </div>
 
-          // Remove active from all
-          link.classList.remove("active");
+    <div class="row g-4 align-items-stretch">
 
-          // Check if current URL ends with link href
-          if (currentPath.endsWith(linkHref)) {
-            link.classList.add("active");
-          }
-        });
-      });
-    </script>
-  </body>
+      <!-- Contact Info -->
+      <div class="col-lg-4 col-md-6">
+        <div class="contact-card h-100">
+
+          <h5 class="mb-4">Get In Touch</h5>
+
+          <!-- Office -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h6>Office</h6>
+              <p>
+                Below Good Homes Furniture, Near More, Next to Bakkeshwara
+                Kalyana Mantapa, Nijalingappa Layout, Davangere 577004,
+                Karnataka
+              </p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa fa-phone-alt"></i>
+            </div>
+            <div>
+              <h6>Mobile</h6>
+              <!-- <p>+91 9964104000</p>
+              <p>+91 9844292481</p> -->
+              <div class="contact-line">
+        <a href="tel:+919964104000" class="lux-call">
+          <i class="fa fa-phone"></i>
+          <span>+91 9964104000</span>
+        </a>
+        <a href="https://wa.me/919964104000"
+           target="_blank"
+           class="lux-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>+91 9964104000</span>
+        </a>
+      </div>  
+       <div class="contact-line">
+        <a href="tel:+919844292481" class="lux-call">
+          <i class="fa fa-phone"></i>
+          <span>+91 9844292481</span>
+        </a>
+        <a href="https://wa.me/919844292481"
+           target="_blank"
+           class="lux-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>+91 9844292481</span>
+        </a>
+      </div>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa fa-envelope-open"></i>
+            </div>
+            <div>
+              <h6>Email</h6>
+              <p>Pbuaradhana@gmail.com</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="col-lg-4 col-md-6">
+        <div class="map-container h-100">
+          <iframe
+            src="https://www.google.com/maps?q=Below%20Good%20Homes,%20Next%20to%20Bakkeshwara%20Kalyana%20Mantapa,%20Nijalingappa%20Layout,%20Davangere%20577004,%20Karnataka&output=embed"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-4 col-md-12">
+        <div class="contact-card h-100">
+          <form id="whatsappForm">
+
+            <div class="mb-3">
+              <input type="text" class="form-control premium-input"
+                id="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="tel" class="form-control premium-input"
+                id="phone" placeholder="Phone Number"
+                pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="email" class="form-control premium-input"
+                id="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control premium-input"
+                id="fromPlace" placeholder="Enquiring From (City / Place)" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="date" class="form-control premium-input"
+                id="travelDate" required>
+            </div>
+
+            <div class="mb-3">
+              <textarea class="form-control premium-input"
+                id="message" rows="4"
+                placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn premium-btn w-100">
+              Send Enquiry via WhatsApp
+            </button>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer-premium">
+
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Company -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Company</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#destinations">Our Destinations</a></li>
+          <li><a href="#services">Our Services</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Contact</h5>
+        <p>
+          <i class="fa fa-map-marker-alt me-2"></i>
+          Below Good Homes Furniture, Near More, Next to
+          Bakkeshwara Kalyana Mantapa, Nijalingappa Layout,
+          Davangere 577004, Karnataka
+        </p>
+        <p>
+          <i class="fa fa-phone-alt me-2"> Call Us/DM Us</i>
+        <div class="contact-line">
+        <a href="tel:+919964104000" class="lux-call">
+          <i class="fa fa-phone"></i>
+          <span>+91 9964104000</span>
+        </a>
+        <a href="https://wa.me/919964104000"
+           target="_blank"
+           class="lux-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>+91 9964104000</span>
+        </a>
+      </div>  
+       <div class="contact-line">
+        <a href="tel:+919844292481" class="lux-call">
+          <i class="fa fa-phone"></i>
+          <span>+91 9844292481</span>
+        </a>
+        <a href="https://wa.me/919844292481"
+           target="_blank"
+           class="lux-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>+91 9844292481</span>
+        </a>
+      </div>
+        </p>
+        <p>
+          <i class="fa fa-envelope me-2"></i>
+          Pbuaradhana@gmail.com
+        </p>
+
+        <!-- <div class="footer-social">
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div> -->
+        <div class="footer-social">
+  <a href="https://www.youtube.com/@BigCarz-IND"
+     target="_blank"
+     rel="noopener noreferrer"
+     title="Visit BigCarz YouTube Channel">
+    <i class="fab fa-youtube"></i>
+  </a>
+
+  <a href="https://www.instagram.com/bigcarz_travels"
+     target="_blank"
+     rel="noopener noreferrer"
+     title="Follow BigCarz on Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+      </div>
+
+      <!-- Gallery -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Gallery</h5>
+        <div class="footer-gallery">
+          <img src="img/ayodhya_temple.jpg" alt="">
+          <img src="img/kanyakumari (2).jpg" alt="">
+          <img src="img/Tajmahal.jpg" alt="">
+          <img src="img/isha.jpg" alt="">
+          <img src="img/kanyakumari.jpg" alt="">
+          <img src="img/ayodhya.jpg" alt="">
+          <img src="img/shirdi.webp" alt="">
+          <img src="img/allepey_boat_house_1.jpg" alt="">
+          <img src="img/kanyakumari (2).jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Thank You -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Thanking You</h5>
+        <p>
+          Thank you for traveling through our website. We look forward
+          to taking you on the road across Incredible India.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom mt-5">
+      <p>
+        © 2026 <strong>BigCarz-Aradhana Tours & Travels</strong>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<a href="https://wa.me/919964104000?text=Hello%20I%20would%20like%20to%20book%20a%20trip"
+   class="whatsapp-premium">
+   💬
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js?v=2"></script>
+
+</body>
 </html>
