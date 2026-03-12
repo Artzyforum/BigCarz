@@ -7,13 +7,24 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+/* Add near the top of style.css */
+:root {
+  --nav-h: 100px; /* default, will be updated by JS */
+}
 
+/* Replace your existing body rule's padding-top with this */
 body {
   font-family: 'Poppins', sans-serif;
   background: #ffffff;
-  padding-top: 100px;
+  padding-top: var(--nav-h);
   overflow-x: hidden;
 }
+
+/* When navigating to #ids, keep content below the fixed header */
+section[id] {
+  scroll-margin-top: calc(var(--nav-h) + 12px);
+}
+
 
 /* =================== NAVBAR =================== */
 .premium-nav {
@@ -52,9 +63,56 @@ body {
 
 .contact-line {
   display: flex;
-  flex-wrap: wrap;
-  gap: 3px 14px;
-  margin-top: 3px;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.contact-line a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.contact-sep {
+  color: #999;
+  font-weight: 600;
+  padding: 0 4px;
+}
+
+@media (max-width: 480px) {
+  .contact-line {
+    gap: 6px;
+  }
+  .contact-line a {
+    font-size: 13px;
+  }
+}
+
+
+
+/* 
+/* Make individual anchors good tap targets on mobile 
+.contact-line a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;     
+  border-radius: 6px;
+} */
+
+/* Slight background on hover/focus for feedback/accessibility */
+.contact-line a:hover,
+.contact-line a:focus {
+  background: rgba(0,0,0,0.04);
+  outline: none;
+}
+
+/* Tighten a bit on very small screens */
+@media (max-width: 420px) {
+  .contact-line { gap: 4px 10px; }
+  .contact-line a span { font-size: 12px; }
 }
 
 .contact-line a {
@@ -92,10 +150,19 @@ body {
   width: 100%;
 }
 
+
 .hero-img {
   width: 100%;
   height: auto;
   display: block;
+  max-height: none;       /* ensure no accidental cap */
+}
+
+/* Slightly tighten the navbar content on very small viewports to reduce header height */
+@media (max-width: 576px) {
+  .navbar-logo { height: 48px; }
+  .brand-title { font-size: 13px; }
+  .contact-line a { font-size: 12px; }
 }
 
 .hero-content {
@@ -143,7 +210,7 @@ body {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
-  padding: 80px 0;
+  padding: 25px 0;
 }
 
 .section-padding.show {

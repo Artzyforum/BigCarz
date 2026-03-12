@@ -45,3 +45,25 @@ document.getElementById('whatsappForm').addEventListener('submit', function (e) 
   const url = `https://wa.me/919964104000?text=${encodeURIComponent(text)}`;
   window.open(url, '_blank');
 });
+
+(function () {
+    const nav = document.querySelector('.premium-nav');
+    const collapse = document.getElementById('navbarNav');
+
+    function setNavOffset() {
+      const h = nav ? nav.offsetHeight : 100;
+      document.documentElement.style.setProperty('--nav-h', h + 'px');
+    }
+
+    // Update on load + resize (orientation changes etc.)
+    window.addEventListener('DOMContentLoaded', setNavOffset);
+    window.addEventListener('load', setNavOffset);
+    window.addEventListener('resize', setNavOffset);
+
+    // Also update when the Bootstrap navbar expands/collapses (mobile)
+    if (collapse) {
+      collapse.addEventListener('shown.bs.collapse', setNavOffset);
+      collapse.addEventListener('hidden.bs.collapse', setNavOffset);
+    }
+  })();
+
